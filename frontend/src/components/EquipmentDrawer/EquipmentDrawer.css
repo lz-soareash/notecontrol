@@ -1,0 +1,145 @@
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+}
+
+.overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.drawer{
+
+    position:fixed;
+
+    top:0;
+
+    right:-420px;
+
+    width:420px;
+
+    height:100vh;
+
+    background:white;
+
+    box-shadow:-5px 0 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    z-index:10;
+
+}
+
+.drawer.open{
+
+    right:0;
+
+}
+
+.drawer-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.drawer-header button{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+}
+
+.drawer-body{
+
+    padding:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.drawer-body strong{
+
+    display:block;
+
+    margin-bottom:4px;
+
+}
+
+.drawer-footer{
+
+    margin-top:auto;
+
+    padding:25px;
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.editar{
+
+    flex:1;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+}
+
+.excluir{
+
+    flex:1;
+
+    border:none;
+
+    background:#EF4444;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+}
