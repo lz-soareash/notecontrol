@@ -1,28 +1,57 @@
 import "./Dashboard.css";
 import Sidebar from "../../components/sidebar/Sidebar";
+import Navbar from "../../components/sidebar/Navbar/Navbar";
+import Card from "../../components/cards/Cards";
+import {
+    FaLaptop,
+    FaTabletAlt,
+    FaShoppingCart,
+    FaTools
+} from "react-icons/fa";
 
 const stats = [
-  {
-    title: "Notebooks",
-    value: 120,
-    icon: "💻",
-  },
-  {
-    title: "Tablets",
-    value: 36,
-    icon: "📱",
-  },
-  {
-    title: "Carrinhos",
-    value: 6,
-    icon: "🛒",
-  },
-  {
-    title: "Em manutenção",
-    value: 2,
-    icon: "🔧",
-  },
-];
+
+    {
+
+        title:"Notebooks",
+
+        value:120,
+
+        icon:FaLaptop
+
+    },
+
+    {
+
+        title:"Tablets",
+
+        value:36,
+
+        icon:FaTabletAlt
+
+    },
+
+    {
+
+        title:"Carrinhos",
+
+        value:6,
+
+        icon:FaShoppingCart
+
+    },
+
+    {
+
+        title:"Em manutenção",
+
+        value:2,
+
+        icon:FaTools
+
+    }
+
+]
 
 export default function Dashboard() {
   return (
@@ -32,26 +61,22 @@ export default function Dashboard() {
 
       <main className="content">
 
-        <h1>Dashboard</h1>
+       <Navbar />
 
-        <div className="cards">
+       <div className="cards">
 
-          {stats.map((item) => (
+    {stats.map((item) => (
 
-            <div className="card" key={item.title}>
+        <Card
+            key={item.title}
+            icon={item.icon}
+            title={item.title}
+            value={item.value}
+        />
 
-              <span className="icon">{item.icon}</span>
+    ))}
 
-              <h2>{item.value}</h2>
-
-              <p>{item.title}</p>
-
-            </div>
-
-          ))}
-
-        </div>
-
+</div>
       </main>
 
     </div>

@@ -8,7 +8,7 @@
 .dashboard{
     display:flex;
     height:100vh;
-    background:#f4f6fb;
+    background:var(--background);
 }
 
 .sidebar{
@@ -61,24 +61,4 @@
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
-}
-
-.card{
-    background:white;
-    border-radius:15px;
-    padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.card .icon{
-    font-size:40px;
-}
-
-.card h2{
-    margin-top:10px;
-    color:#2563EB;
-}
-
-.card p{
-    color:#777;
 }
