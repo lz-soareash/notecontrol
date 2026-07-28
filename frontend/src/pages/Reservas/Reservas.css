@@ -1,0 +1,53 @@
+.reservas{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+max-width:700px;
+
+}
+
+.reservas input,
+
+.reservas select,
+
+.reservas textarea{
+
+padding:12px;
+
+font-size:15px;
+
+border-radius:10px;
+
+border:1px solid #ccc;
+
+}
+
+.reservas button{
+
+background:#2563eb;
+
+color:white;
+
+padding:14px;
+
+border:none;
+
+border-radius:10px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+.reservas textarea{
+
+height:120px;
+
+resize:none;
+
+}

@@ -1,128 +1,115 @@
 .sidebar{
 
-    width:260px;
-    height:100vh;
+width:var(--sidebar-width);
 
-    background:var(--sidebar);
+background:var(--sidebar);
 
-    color:white;
+display:flex;
 
-    display:flex;
+flex-direction:column;
 
-    flex-direction:column;
+color:white;
 
-    padding:20px;
-
-    transition:.3s;
+min-height:100vh;
 
 }
 
-.sidebar.collapsed{
+.logo{
 
-    width:90px;
+padding:25px;
 
-}
-
-.top{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    margin-bottom:40px;
+border-bottom:1px solid rgba(255,255,255,.08);
 
 }
 
-.menu-button{
+.logo h2{
 
-    width:45px;
-
-    height:45px;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:transparent;
-
-    color:white;
-
-    cursor:pointer;
-
-    font-size:18px;
-
-}
-
-.menu-button:hover{
-
-    background:rgba(255,255,255,.1);
+font-size:24px;
 
 }
 
 .sidebar nav{
 
-    display:flex;
+display:flex;
 
-    flex-direction:column;
+flex-direction:column;
 
-    gap:10px;
+margin-top:20px;
 
-}
-
-.sidebar nav button{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-    padding:15px;
-
-    border:none;
-
-    background:transparent;
-
-    color:white;
-
-    border-radius:12px;
-
-    cursor:pointer;
-
-    transition:.25s;
-
-    font-size:15px;
+flex:1;
 
 }
 
-.sidebar nav button:hover{
+.sidebar nav a{
 
-    background:var(--primary);
+display:flex;
 
-}
+align-items:center;
 
-.sidebar nav button.active{
+gap:15px;
 
-    background:var(--primary);
+padding:16px 24px;
 
-}
+color:white;
 
-.sidebar nav button svg{
-
-    font-size:20px;
-
-    min-width:20px;
+transition:.2s;
 
 }
 
-.footer{
+.sidebar nav a:hover{
 
-    margin-top:auto;
+background:rgba(255,255,255,.08);
 
-    opacity:.7;
+}
 
-    text-align:center;
+.sidebar nav a.active{
+
+background:var(--primary);
+
+}
+
+.sidebar-user{
+
+margin-top:auto;
+
+padding:20px;
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.sidebar-user img{
+
+width:46px;
+
+height:46px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+.sidebar-user strong{
+
+display:block;
+
+font-size:14px;
+
+color:white;
+
+}
+
+.sidebar-user small{
+
+color:#cbd5e1;
+
+font-size:12px;
 
 }

@@ -1,0 +1,27 @@
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+}
+
+th{
+
+background:#2563eb;
+
+color:white;
+
+padding:12px;
+
+}
+
+td{
+
+padding:10px;
+
+border-bottom:1px solid #ddd;
+
+}

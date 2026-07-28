@@ -1,0 +1,61 @@
+.equip-summary{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin-bottom:30px;
+
+}
+
+.equip-summary-card{
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+padding:25px;
+
+border-radius:18px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+transition:.25s;
+
+box-shadow:0 5px 15px rgba(0,0,0,.06);
+
+}
+
+.equip-summary-card:hover{
+
+transform:translateY(-4px);
+
+}
+
+.equip-summary-card h4{
+
+color:var(--text-secondary);
+
+margin-bottom:10px;
+
+}
+
+.equip-summary-card h1{
+
+font-size:34px;
+
+color:var(--text);
+
+}
+
+.equip-summary-card span{
+
+font-size:38px;
+
+}

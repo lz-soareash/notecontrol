@@ -1,37 +1,114 @@
 import "./Sidebar.css";
 
+import { NavLink } from "react-router-dom";
+
+import { usuarioLogado } from "../../database/usuarios";
+
+import { FaClipboardList } from "react-icons/fa";
+
+import {
+  FaChartPie,
+  FaLaptop,
+  FaShoppingCart,
+  FaCalendarAlt,
+  FaExchangeAlt,
+  FaUsers,
+  FaChartBar,
+  FaCog
+} from "react-icons/fa";
+
 export default function Sidebar() {
-    return (
-        <aside className="sidebar">
 
-            <h2>NoteControl</h2>
+  return (
 
-            <nav>
+    <aside className="sidebar">
 
-                <button>🏠 Dashboard</button>
+      <div className="logo">
 
-                <button>💻 Equipamentos</button>
+        <h2>NoteControl</h2>
 
-                <button>🛒 Carrinhos</button>
+      </div>
 
-                <button>📅 Reservas</button>
+      <nav>
 
-                <button>📦 Empréstimos</button>
+        <NavLink to="/">
+          <FaChartPie />
+          <span>Dashboard</span>
+        </NavLink>
 
-                <button>🔧 Manutenção</button>
+        <NavLink to="/equipamentos">
+          <FaLaptop />
+          <span>Equipamentos</span>
+        </NavLink>
 
-                <button>👤 Usuários</button>
+        <NavLink to="/carrinhos">
+          <FaShoppingCart />
+          <span>Carrinhos</span>
+        </NavLink>
 
-                <button>📊 Relatórios</button>
+        <NavLink to="/reservas">
+          <FaCalendarAlt />
+          <span>Reservas</span>
+        </NavLink>
 
-                <button>⚙ Configurações</button>
+        <NavLink to="/emprestimos">
+          <FaExchangeAlt />
+          <span>Empréstimos</span>
+        </NavLink>
 
-            </nav>
+        <NavLink to="/usuarios">
+          <FaUsers />
+          <span>Usuários</span>
+        </NavLink>
 
-            <span className="version">
-                v0.1.0
-            </span>
+        <NavLink to="/relatorios">
+          <FaChartBar />
+          <span>Relatórios</span>
+        </NavLink>
 
-        </aside>
-    );
+        <NavLink to="/configuracoes">
+          <FaCog />
+          <span>Configurações</span>
+        </NavLink>
+
+        <NavLink to="/minha-conta">
+        👤
+        <span>Minha Conta</span>
+        </NavLink>
+
+      <NavLink to="/logs">
+
+      <FaClipboardList/>
+
+      <span>Auditoria</span>
+
+      </NavLink>
+
+      </nav>
+
+      <div className="sidebar-user">
+
+        <img
+          src="https://i.pravatar.cc/100"
+          alt="Perfil"
+        />
+
+        <div>
+
+          <strong>
+            {usuarioLogado?.nome}
+          </strong>
+
+          <small>
+            {usuarioLogado?.cargo}
+          </small>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+  );
+
 }

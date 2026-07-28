@@ -1,0 +1,33 @@
+.legenda{
+
+display:flex;
+
+gap:25px;
+
+margin:25px 0;
+
+flex-wrap:wrap;
+
+}
+
+.legenda div{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.cor{
+
+width:18px;
+
+height:18px;
+
+border-radius:50%;
+
+display:inline-block;
+
+}

@@ -1,0 +1,27 @@
+.equip-filters{
+
+margin-bottom:25px;
+
+display:flex;
+
+}
+
+.equip-filters input{
+
+width:100%;
+
+padding:16px;
+
+background:var(--card);
+
+color:var(--text);
+
+border:1px solid var(--border);
+
+border-radius:14px;
+
+font-size:15px;
+
+outline:none;
+
+}

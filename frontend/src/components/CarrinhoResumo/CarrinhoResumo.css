@@ -1,0 +1,33 @@
+.resumo-carrinho{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:18px;
+
+margin-bottom:30px;
+
+}
+
+.resumo-carrinho div{
+
+background:var(--card);
+
+padding:18px;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+.resumo-carrinho h3{
+
+font-size:30px;
+
+margin-bottom:5px;
+
+}

@@ -1,0 +1,13 @@
+.card{
+
+background:var(--card);
+
+padding:20px;
+
+border-radius:15px;
+
+border:1px solid var(--border);
+
+box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+}

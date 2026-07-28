@@ -1,0 +1,225 @@
+.equip-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:25px;
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.equip-table th{
+
+background:#2563eb;
+
+color:white;
+
+padding:18px;
+
+text-align:left;
+
+}
+
+.equip-table td{
+
+padding:18px;
+
+border-bottom:1px solid #eee;
+
+}
+
+.equip-table tr:hover{
+
+background:#f5f8ff;
+
+}
+
+.equip-header{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-bottom:25px;
+
+}
+
+.equip-header input{
+
+width:350px;
+
+padding:14px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+font-size:15px;
+
+}
+
+.equip-header button{
+
+padding:14px 22px;
+
+border:none;
+
+border-radius:10px;
+
+background:#2563eb;
+
+color:white;
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
+
+.edit{
+
+background:#16a34a;
+
+border:none;
+
+padding:8px 15px;
+
+color:white;
+
+border-radius:8px;
+
+margin-right:10px;
+
+cursor:pointer;
+
+}
+
+.delete{
+
+background:#dc2626;
+
+border:none;
+
+padding:8px 15px;
+
+color:white;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+.view{
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+padding:8px 15px;
+
+border-radius:8px;
+
+margin-right:10px;
+
+cursor:pointer;
+
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.form-group select{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.modal{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.5);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.modal-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+width:450px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.equip-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(430px,1fr));
+
+gap:22px;
+
+margin-top:30px;
+
+}
+
+.equip-toolbar{
+
+display:flex;
+
+gap:20px;
+
+align-items:center;
+
+margin:30px 0;
+
+}
+
+.equip-toolbar button{
+
+white-space:nowrap;
+
+}
+
+.equip-grid{
+
+align-items:stretch;
+
+}
+
+.equip-grid>*{
+
+height:100%;
+
+}

@@ -1,0 +1,47 @@
+.recent{
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+border-radius:18px;
+
+padding:25px;
+
+}
+
+.recent h2{
+
+margin-bottom:20px;
+
+}
+
+.recent table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.recent th{
+
+text-align:left;
+
+padding:15px;
+
+color:var(--text);
+
+border-bottom:1px solid var(--border);
+
+}
+
+.recent td{
+
+padding:15px;
+
+color:var(--text-secondary);
+
+border-bottom:1px solid var(--border);
+
+}

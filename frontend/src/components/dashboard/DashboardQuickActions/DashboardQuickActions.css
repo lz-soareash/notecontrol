@@ -1,0 +1,57 @@
+.quick-actions{
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+padding:25px;
+
+border-radius:18px;
+
+}
+
+.quick-actions h2{
+
+margin-bottom:20px;
+
+color:var(--text);
+
+}
+
+.actions-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:18px;
+
+}
+
+.actions-grid button{
+
+padding:25px;
+
+border:none;
+
+border-radius:15px;
+
+background:var(--primary);
+
+color:white;
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.actions-grid button:hover{
+
+transform:translateY(-4px);
+
+}

@@ -1,0 +1,55 @@
+.dashboard-greeting{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+border-radius:18px;
+
+padding:28px;
+
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+}
+
+.dashboard-greeting h1{
+
+font-size:34px;
+
+color:var(--text);
+
+margin-bottom:10px;
+
+}
+
+.dashboard-greeting p{
+
+font-size:17px;
+
+color:var(--text-secondary);
+
+}
+
+.dashboard-greeting strong{
+
+color:var(--primary);
+
+}
+
+.dashboard-date{
+
+font-size:15px;
+
+font-weight:600;
+
+color:var(--text-secondary);
+
+text-transform:capitalize;
+
+}

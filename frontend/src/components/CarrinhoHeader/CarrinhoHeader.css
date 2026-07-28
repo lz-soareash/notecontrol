@@ -1,0 +1,25 @@
+.carrinho-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:25px;
+
+}
+
+.carrinho-header h2{
+
+font-size:30px;
+
+margin-bottom:5px;
+
+}
+
+.carrinho-header p{
+
+color:var(--text-secondary);
+
+}

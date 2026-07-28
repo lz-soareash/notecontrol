@@ -1,0 +1,37 @@
+.equipamento-actions{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+margin-top:25px;
+
+}
+
+.equipamento-actions button{
+
+padding:12px;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+background:#2563eb;
+
+color:white;
+
+font-weight:600;
+
+transition:.25s;
+
+}
+
+.equipamento-actions button:hover{
+
+transform:translateY(-2px);
+
+}

@@ -1,0 +1,27 @@
+.search-bar{
+
+width:100%;
+
+padding:15px 18px;
+
+border-radius:14px;
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+color:var(--text);
+
+outline:none;
+
+font-size:15px;
+
+transition:.2s;
+
+}
+
+.search-bar:focus{
+
+border-color:var(--primary);
+
+}

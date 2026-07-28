@@ -1,0 +1,17 @@
+.equip-toolbar{
+
+display:flex;
+
+gap:20px;
+
+align-items:center;
+
+margin:30px 0;
+
+}
+
+.equip-toolbar>*:first-child{
+
+flex:1;
+
+}

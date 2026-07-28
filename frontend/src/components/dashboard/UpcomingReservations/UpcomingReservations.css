@@ -1,0 +1,17 @@
+.reservation-item{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:14px 0;
+
+border-bottom:1px solid rgba(0,0,0,.08);
+
+}
+
+body.dark .reservation-item{
+
+border-color:#333;
+
+}

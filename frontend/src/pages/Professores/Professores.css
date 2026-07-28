@@ -1,0 +1,36 @@
+.page{
+    padding:30px;
+}
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+.table th,
+.table td{
+    padding:14px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+.table button{
+    margin-right:8px;
+}

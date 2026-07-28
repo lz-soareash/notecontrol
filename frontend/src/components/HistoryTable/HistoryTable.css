@@ -1,0 +1,33 @@
+.history{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+}
+
+.history th{
+
+background:#2563eb;
+
+color:white;
+
+padding:12px;
+
+}
+
+.history td{
+
+padding:12px;
+
+border-bottom:1px solid #eee;
+
+}
+
+.history tr:hover{
+
+background:#f7f7f7;
+
+}
